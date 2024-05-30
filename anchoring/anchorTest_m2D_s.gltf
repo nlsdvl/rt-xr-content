@@ -501,7 +501,8 @@
 			"anchors": [
 				{                    
 					"trackable": 0,
-					"requiresAnchoring":true
+					"requiresAnchoring":true,
+                    "aligned": 2
 				}
 			],
 			"trackables": [
