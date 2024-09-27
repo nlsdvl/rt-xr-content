@@ -1,0 +1,409 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.1.63",
+        "version": "2.0"
+    },
+    "extensionsUsed": [
+        "KHR_materials_specular",
+        "KHR_materials_ior",
+        "MPEG_anchor",
+        "MPEG_scene_interactivity"
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "name": "Scene",
+            "nodes": [
+                3
+            ],
+            "extensions": {
+                "MPEG_anchor": {
+                    "anchor": 0
+                },
+                "MPEG_scene_interactivity": {
+                    "triggers": [
+                        {
+                            "type": 2,
+                            "userInputDescription": "/Touchscreen/press",
+                            "nodes": [
+                                3
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": 5,
+                            "delay": 0,
+                            "manipulateActionType": 0,
+                            "userInputDescription": "/Touchscreen/position",
+                            "nodes": [
+                                3
+                            ]
+                        }
+                    ],
+                    "behaviors": [
+                        {
+                            "triggers": [
+                                0
+                            ],
+                            "actions": [
+                                0
+                            ],
+                            "triggersCombinationControl": "#0",
+                            "triggersActivationControl": 2,
+                            "actionsControl": 0
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "Object_5"
+        },
+        {
+            "children": [
+                0
+            ],
+            "name": "ufo.1_1",
+            "scale": [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
+        },
+        {
+            "children": [
+                1
+            ],
+            "name": "Sketchfab_model",
+            "translation": [
+                0,
+                0.25,
+                0
+            ]
+        },
+        {
+            "children": [
+                2
+            ],
+            "name": "offset"
+        }
+    ],
+    "animations": [
+        {
+            "channels": [
+                {
+                    "sampler": 0,
+                    "target": {
+                        "node": 2,
+                        "path": "translation"
+                    }
+                },
+                {
+                    "sampler": 1,
+                    "target": {
+                        "node": 2,
+                        "path": "rotation"
+                    }
+                }
+            ],
+            "name": "Sketchfab_modelAction.001",
+            "samplers": [
+                {
+                    "input": 8,
+                    "interpolation": "LINEAR",
+                    "output": 9
+                },
+                {
+                    "input": 8,
+                    "interpolation": "LINEAR",
+                    "output": 10
+                }
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "emissiveTexture": {
+                "index": 0
+            },
+            "extensions": {
+                "KHR_materials_specular": {
+                    "specularColorTexture": {
+                        "index": 1
+                    }
+                },
+                "KHR_materials_ior": {
+                    "ior": 1000
+                }
+            },
+            "name": "material_0",
+            "normalTexture": {
+                "index": 2
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 3
+                },
+                "metallicFactor": 0,
+                "metallicRoughnessTexture": {
+                    "index": 4
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Object_0",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "TEXCOORD_2": 4,
+                        "TEXCOORD_3": 5,
+                        "TEXCOORD_4": 6
+                    },
+                    "indices": 7,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        },
+        {
+            "sampler": 0,
+            "source": 4
+        }
+    ],
+    "images": [
+        {
+            "mimeType": "image/png",
+            "name": "material_0_emissive",
+            "uri": "textures/material_0_emissive.png"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "material_0_specularGlossiness",
+            "uri": "textures/material_0_specularGlossiness.png"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "material_0_normal",
+            "uri": "textures/material_0_normal.png"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "material_0_diffuse",
+            "uri": "textures/material_0_diffuse.png"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "material_0_specularGlossiness",
+            "uri": "textures/material_0_specularGlossiness-1.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 12309,
+            "max": [
+                48.66593551635742,
+                39.226829528808594,
+                48.5836067199707
+            ],
+            "min": [
+                -48.66593551635742,
+                -0.8851890563964844,
+                -48.5836067199707
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 12309,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 12309,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 12309,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 12309,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 12309,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 12309,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5123,
+            "count": 48330,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 61,
+            "max": [
+                2.5
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC4"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 147708,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 147708,
+            "byteOffset": 147708,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 98472,
+            "byteOffset": 295416,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 98472,
+            "byteOffset": 393888,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 98472,
+            "byteOffset": 492360,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 98472,
+            "byteOffset": 590832,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 98472,
+            "byteOffset": 689304,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 96660,
+            "byteOffset": 787776,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 244,
+            "byteOffset": 884436
+        },
+        {
+            "buffer": 0,
+            "byteLength": 732,
+            "byteOffset": 884680
+        },
+        {
+            "buffer": 0,
+            "byteLength": 976,
+            "byteOffset": 885412
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 886388,
+            "uri": "ufo.bin"
+        }
+    ],
+    "extensions": {
+        "MPEG_anchor": {
+            "anchors": [
+                {
+                    "trackable": 0,
+                    "requiresAnchoring": true
+                }
+            ],
+            "trackables": [
+                {
+                    "type": 0
+                }
+            ]
+        }
+    }
+}
